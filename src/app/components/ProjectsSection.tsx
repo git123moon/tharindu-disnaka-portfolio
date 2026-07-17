@@ -319,14 +319,14 @@ const projects: Project[] = [
     {
       subtitle: 'Project Overview',
       period: 'Semester 7 & 8, 2025–2026',
-      description: 'Developed a comprehensive assistive robotic wheelchair system for elderly individuals with Sarcopenia. The system integrates mobility, safe self-transfer capability, intelligent human-following, and continuous health monitoring.',
+      description: 'Developed a comprehensive assistive robotic wheelchair system for elderly individuals with Sarcopenia. The system integrates mobility, safe self-transfer capability, intelligent human-following, and continuous health monitoring to enhance user independence and reduce caregiver burden.',
       role: 'Team Lead – Mechanical Design & System Integration',
       achievement: 'Self-Transfer Mechanism • ROS2 Navigation • Caregiver Tracking'
     },
     {
       subtitle: 'Key Features',
       period: '',
-      description: '• Self-transfer split-chair mechanism for safe bed-to-wheelchair transfer\n• ROS2-based autonomous navigation and SLAM\n• Real-time caregiver following using computer vision\n• Continuous health monitoring (SpO₂, Pulse rate)\n• Belt-driven front wheel steering system',
+      description: '• Self-transfer split-chair mechanism\n• ROS2-based autonomous navigation and SLAM\n• Real-time caregiver following using computer vision\n• Continuous health monitoring (SpO₂, Pulse rate)\n• Belt-driven front wheel steering system',
       photos: [
         { src: '/assets/images/assistive-robot-full-design.png', alt: 'Complete CAD model of the assistive robot' },
         { src: '/assets/images/assistive-robot-transfer-mechanism.png', alt: 'Self-transfer split chair mechanism' },
@@ -336,12 +336,33 @@ const projects: Project[] = [
     {
       subtitle: 'Mechanical Design',
       period: '',
-      description: 'Designed a three-wheel front-drive mobile platform with belt-driven steering. Developed a novel split-chair self-transfer mechanism with ergonomic considerations for sarcopenia patients. Performed Finite Element Analysis (FEA).',
+      description: 'Three-wheel front-drive mobile platform with belt-driven steering. Novel split-chair self-transfer mechanism with ergonomic considerations. Structural validation using Finite Element Analysis (FEA).',
+    },
+    {
+      subtitle: 'Low Level Controller',
+      period: '',
+      description: 'The low-level controller handles real-time motor control, sensor data acquisition, and safety functions. It communicates with the high-level ROS2 system.',
+      photos: [
+        { src: '/assets/images/assistive-robot-low-level-circuit.png', alt: 'Low Level Controller Circuit Diagram' }
+      ]
+    },
+    {
+      subtitle: 'Low Level Controller Components',
+      period: '',
+      description: '• Main Microcontroller (ESP32 / Arduino Mega)\n• BTS7960 / High-current Motor Drivers (for drive & steering motors)\n• HC-12 Wireless Module for remote control\n• MPU6050 IMU + HMC5883L Magnetometer\n• Encoders for wheel feedback\n• Emergency stop button and safety relays',
+    },
+    {
+      subtitle: 'Remote Controller',
+      period: '',
+      description: 'A wireless remote controller was developed for manual override and emergency control. It uses HC-12 module for reliable long-range communication with the low-level controller.',
+      photos: [
+        { src: '/assets/images/assistive-robot-remote-controller.png', alt: 'Remote Controller Circuit and Design' }
+      ]
     },
     {
       subtitle: 'Control & Perception System',
       period: '',
-      description: 'Implemented hybrid control architecture using ROS2. Integrated LiDAR for SLAM, depth camera for human tracking, sensor fusion, voice control, and cloud communication.',
+      description: 'Hybrid architecture using ROS2 for high-level tasks (SLAM, navigation, human tracking) and low-level microcontroller for real-time motor control and sensor fusion.',
     },
     {
       subtitle: 'Demonstration Video',
