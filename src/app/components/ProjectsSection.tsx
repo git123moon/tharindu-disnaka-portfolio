@@ -365,7 +365,7 @@ const projects: Project[] = [
       description: 'Hybrid architecture using ROS2 for high-level tasks (SLAM, navigation, human tracking) and low-level microcontroller for real-time motor control and sensor fusion.',
     },
     {
-      subtitle: 'Demonstration Video',
+      subtitle: 'Demonstration Video ',
       period: '',
       description: 'Watch the working prototype in action:',
       videos: [
