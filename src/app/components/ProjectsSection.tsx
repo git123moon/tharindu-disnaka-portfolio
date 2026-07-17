@@ -318,10 +318,10 @@ const projects: Project[] = [
   details: [
     {
       subtitle: 'Project Overview',
-      period: '',
-      description: 'Developed a comprehensive assistive robotic wheelchair that integrates mobility, safe self-transfer capability, and intelligent human-following features. The system aims to significantly improve independence and quality of life for elderly individuals with Sarcopenia while reducing caregiver burden.',
-      role: 'Team Lead - Mechanical Design & System Integration',
-      achievement: 'Designed self-transfer split-chair mechanism • Implemented ROS2-based navigation & caregiver tracking'
+      period: 'Semester 7 & 8, 2025–2026',
+      description: 'Developed a comprehensive assistive robotic wheelchair system for elderly individuals with Sarcopenia. The system integrates mobility, safe self-transfer capability, intelligent human-following, and continuous health monitoring to enhance user independence and reduce caregiver burden.',
+      role: 'Team Lead – Mechanical Design & System Integration',
+      achievement: 'Self-Transfer Mechanism • ROS2 Navigation • Caregiver Tracking'
     },
     {
       subtitle: 'Key Features',
@@ -336,17 +336,17 @@ const projects: Project[] = [
     {
       subtitle: 'Mechanical Design',
       period: '',
-      description: 'Designed a three-wheel front-drive mobile platform with belt-driven steering. Developed a novel split-chair self-transfer mechanism with ergonomic considerations for sarcopenia patients. Performed detailed structural analysis using Finite Element Analysis (FEA) and motor torque simulations.',
+      description: 'Designed a stable three-wheel front-drive mobile platform. Developed a novel split-chair self-transfer mechanism with ergonomic considerations. Performed Finite Element Analysis (FEA) and motor torque simulations for structural safety.',
     },
     {
       subtitle: 'Control & Perception System',
       period: '',
-      description: 'Implemented a hybrid control architecture using ROS2. Integrated LiDAR for SLAM & navigation, depth camera for human detection and tracking, and sensor fusion for robust operation. Developed voice control and cloud communication features.',
+      description: 'Implemented hybrid control architecture using ROS2. Integrated LiDAR for SLAM & navigation, depth camera for human detection & tracking, sensor fusion, voice control, and cloud communication.',
     },
     {
       subtitle: 'Results & Achievements',
       period: '',
-      description: 'Successfully fabricated and tested the prototype. Validated self-transfer mechanism, navigation in simulated hospital environment, and caregiver following capability. The system demonstrated safe operation and effective reduction in caregiver dependency.',
+      description: 'Successfully fabricated the prototype and validated self-transfer mechanism, indoor navigation in simulated hospital environment, and caregiver following capability. The system demonstrated safe operation and significant reduction in caregiver dependency.',
     }
   ]
 },
