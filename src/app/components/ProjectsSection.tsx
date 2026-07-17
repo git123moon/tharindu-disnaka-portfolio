@@ -308,28 +308,47 @@ const projects: Project[] = [
 },
 {
   id: 6,
-  title: 'Autonomous Assistive Robot for Elderly Care',
-  period: 'Semester 7 & 8 · Final Year Project',
-  summary: 'Autonomous robotic system for safe transfer and health monitoring of elderly individuals with sarcopenia. ROS2 simulation, IoT health monitoring, and human tracking.',
-  tags: ['ROS2', 'IoT', 'Human Tracking', 'Mobile Navigation', 'Health Monitoring'],
-  image: "/assets/images/Screenshot_2026-05-04_083112-1777863705970.png",
-  imageAlt: 'Medical robotic assistant in hospital corridor, white robotic arm mechanism, elderly care environment, clean clinical setting',
-  accentColor: 'border-rose-500/40',
+  title: 'Autonomous Assistive Robot for Elderly with Sarcopenia',
+  period: 'Final Year Project • 2025/2026',
+  summary: 'Designed and developed an integrated autonomous robotic wheelchair with self-transfer mechanism, caregiver following, and continuous health monitoring to enhance independence of elderly individuals suffering from Sarcopenia.',
+  tags: ['ROS2', 'Assistive Robotics', 'Computer Vision', 'SLAM', 'Mechanical Design', 'FEA'],
+  image: "/assets/images/assistive-robot-main.png",
+  imageAlt: 'Autonomous Assistive Robot for Elderly Care',
+  accentColor: 'border-emerald-500/40',
   details: [
-  {
-    subtitle: 'Autonomous Assistive Robot for Elderly Care',
-    period: 'Semester 7 & 8, 2025–2026 (Final Year Project)',
-    description: 'Developing an autonomous assistive robotic system for safe transfer and continuous health monitoring of elderly individuals with sarcopenia. The system integrates mobile navigation, mechanical lifting mechanisms, IoT-based health monitoring sensors, ROS2 simulation environment, and human tracking algorithms.',
-    role: 'Lead Systems Engineer',
-    achievement: 'Ongoing FYP · ROS2 + IoT integration'
-  },
-  {
-    subtitle: 'Automated ACB Re-Powering System',
-    period: 'Semester 6, Internship at CICT',
-    description: 'Automated the Air Circuit Breaker re-powering process in DC 680V distribution system using Siemens LOGO PLC. Modified control logic to automate manual recovery procedures, significantly reducing recovery time and improving safety.',
-    role: 'PLC Automation Engineer',
-    achievement: 'Reduced manual recovery time · DC 680V automation'
-  }]
+    {
+      subtitle: 'Project Overview',
+      period: '',
+      description: 'Developed a comprehensive assistive robotic wheelchair that integrates mobility, safe self-transfer capability, and intelligent human-following features. The system aims to significantly improve independence and quality of life for elderly individuals with Sarcopenia while reducing caregiver burden.',
+      role: 'Team Lead - Mechanical Design & System Integration',
+      achievement: 'Designed self-transfer split-chair mechanism • Implemented ROS2-based navigation & caregiver tracking'
+    },
+    {
+      subtitle: 'Key Features',
+      period: '',
+      description: '• Self-transfer split-chair mechanism for safe bed-to-wheelchair transfer\n• ROS2-based autonomous navigation and SLAM\n• Real-time caregiver following using computer vision\n• Continuous health monitoring (SpO₂, Pulse rate)\n• Belt-driven front wheel steering system\n• Web-based user & caregiver interfaces',
+      photos: [
+        { src: '/assets/images/assistive-robot-full-design.png', alt: 'Complete CAD model of the assistive robot' },
+        { src: '/assets/images/assistive-robot-transfer-mechanism.png', alt: 'Self-transfer split chair mechanism' },
+        { src: '/assets/images/assistive-robot-prototype.png', alt: 'Fabricated prototype' }
+      ]
+    },
+    {
+      subtitle: 'Mechanical Design',
+      period: '',
+      description: 'Designed a three-wheel front-drive mobile platform with belt-driven steering. Developed a novel split-chair self-transfer mechanism with ergonomic considerations for sarcopenia patients. Performed detailed structural analysis using Finite Element Analysis (FEA) and motor torque simulations.',
+    },
+    {
+      subtitle: 'Control & Perception System',
+      period: '',
+      description: 'Implemented a hybrid control architecture using ROS2. Integrated LiDAR for SLAM & navigation, depth camera for human detection and tracking, and sensor fusion for robust operation. Developed voice control and cloud communication features.',
+    },
+    {
+      subtitle: 'Results & Achievements',
+      period: '',
+      description: 'Successfully fabricated and tested the prototype. Validated self-transfer mechanism, navigation in simulated hospital environment, and caregiver following capability. The system demonstrated safe operation and effective reduction in caregiver dependency.',
+    }
+  ]
 },
 {
     id: 7,
@@ -462,7 +481,6 @@ const projects: Project[] = [
     }
   ]
 }];
-
 
 export default function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
