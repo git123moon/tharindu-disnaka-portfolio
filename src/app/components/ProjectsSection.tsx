@@ -326,37 +326,33 @@ const projects: Project[] = [
     {
       subtitle: 'Key Features',
       period: '',
-      description: '• Self-transfer split-chair mechanism\n• ROS2-based autonomous navigation and SLAM\n• Real-time caregiver following using computer vision\n• Continuous health monitoring (SpO₂, Pulse rate)\n• Belt-driven steering system',
+      description: '• Self-transfer split-chair mechanism for safe bed-to-wheelchair transfer\n• ROS2-based autonomous navigation and SLAM\n• Real-time caregiver following using computer vision\n• Continuous health monitoring (SpO₂, Pulse rate)\n• Belt-driven front wheel steering system',
       photos: [
         { src: '/assets/images/assistive-robot-full-design.png', alt: 'Complete CAD model of the assistive robot' },
         { src: '/assets/images/assistive-robot-transfer-mechanism.png', alt: 'Self-transfer split chair mechanism' },
-        { src: '/assets/images/assistive-robot-prototype.png', alt: 'Fabricated physical prototype' },
-        { src: '/assets/images/assistive-robot-gazebo.png', alt: 'Gazebo simulation environment' }
+        { src: '/assets/images/assistive-robot-prototype.png', alt: 'Fabricated physical prototype' }
       ]
     },
     {
       subtitle: 'Mechanical Design',
       period: '',
-      description: 'Three-wheel front-drive platform with belt-driven steering. Novel split-chair self-transfer mechanism designed with ergonomic considerations for sarcopenia patients. Structural validation using Finite Element Analysis (FEA).',
-      photos: [
-        { src: '/assets/images/assistive-robot-fea.png', alt: 'Finite Element Analysis results' }
-      ]
+      description: 'Designed a three-wheel front-drive mobile platform with belt-driven steering. Developed a novel split-chair self-transfer mechanism with ergonomic considerations for sarcopenia patients. Performed Finite Element Analysis (FEA).',
     },
     {
-      subtitle: 'Control & Perception',
+      subtitle: 'Control & Perception System',
       period: '',
-      description: 'Hybrid ROS2 control architecture with LiDAR-based SLAM, depth camera for human tracking, sensor fusion, voice control, and cloud-based health monitoring.',
+      description: 'Implemented hybrid control architecture using ROS2. Integrated LiDAR for SLAM, depth camera for human tracking, sensor fusion, voice control, and cloud communication.',
     },
     {
-      subtitle: 'Results',
+      subtitle: 'Demonstration Video',
       period: '',
-      description: 'Successfully fabricated and tested the prototype. Validated safe self-transfer, indoor navigation, and caregiver following in simulated hospital environments.',
-      photos: [
-        { src: '/assets/images/assistive-robot-caregiver-tracking.png', alt: 'Caregiver following demonstration' }
+      description: 'Watch the working prototype in action:',
+      videos: [
+        { src: '/assets/videos/assistive-robot-demo.mp4', alt: 'Full Demonstration of Autonomous Assistive Robot' }
       ]
     }
   ]
-}
+},
 {
     id: 7,
     title: 'Automated ACB Re-Powering System',
