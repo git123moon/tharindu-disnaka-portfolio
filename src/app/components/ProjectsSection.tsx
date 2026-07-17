@@ -319,37 +319,44 @@ const projects: Project[] = [
     {
       subtitle: 'Project Overview',
       period: 'Semester 7 & 8, 2025–2026',
-      description: 'Developed a comprehensive assistive robotic wheelchair system for elderly individuals with Sarcopenia. The system integrates mobility, safe self-transfer capability, intelligent human-following, and continuous health monitoring to enhance user independence and reduce caregiver burden.',
+      description: 'Developed a comprehensive assistive robotic wheelchair system for elderly individuals with Sarcopenia. The system integrates mobility, safe self-transfer capability, intelligent human-following, and continuous health monitoring.',
       role: 'Team Lead – Mechanical Design & System Integration',
       achievement: 'Self-Transfer Mechanism • ROS2 Navigation • Caregiver Tracking'
     },
     {
       subtitle: 'Key Features',
       period: '',
-      description: '• Self-transfer split-chair mechanism for safe bed-to-wheelchair transfer\n• ROS2-based autonomous navigation and SLAM\n• Real-time caregiver following using computer vision\n• Continuous health monitoring (SpO₂, Pulse rate)\n• Belt-driven front wheel steering system\n• Web-based user & caregiver interfaces',
+      description: '• Self-transfer split-chair mechanism\n• ROS2-based autonomous navigation and SLAM\n• Real-time caregiver following using computer vision\n• Continuous health monitoring (SpO₂, Pulse rate)\n• Belt-driven steering system',
       photos: [
         { src: '/assets/images/assistive-robot-full-design.png', alt: 'Complete CAD model of the assistive robot' },
         { src: '/assets/images/assistive-robot-transfer-mechanism.png', alt: 'Self-transfer split chair mechanism' },
-        { src: '/assets/images/assistive-robot-prototype.png', alt: 'Fabricated prototype' }
+        { src: '/assets/images/assistive-robot-prototype.png', alt: 'Fabricated physical prototype' },
+        { src: '/assets/images/assistive-robot-gazebo.png', alt: 'Gazebo simulation environment' }
       ]
     },
     {
       subtitle: 'Mechanical Design',
       period: '',
-      description: 'Designed a stable three-wheel front-drive mobile platform. Developed a novel split-chair self-transfer mechanism with ergonomic considerations. Performed Finite Element Analysis (FEA) and motor torque simulations for structural safety.',
+      description: 'Three-wheel front-drive platform with belt-driven steering. Novel split-chair self-transfer mechanism designed with ergonomic considerations for sarcopenia patients. Structural validation using Finite Element Analysis (FEA).',
+      photos: [
+        { src: '/assets/images/assistive-robot-fea.png', alt: 'Finite Element Analysis results' }
+      ]
     },
     {
-      subtitle: 'Control & Perception System',
+      subtitle: 'Control & Perception',
       period: '',
-      description: 'Implemented hybrid control architecture using ROS2. Integrated LiDAR for SLAM & navigation, depth camera for human detection & tracking, sensor fusion, voice control, and cloud communication.',
+      description: 'Hybrid ROS2 control architecture with LiDAR-based SLAM, depth camera for human tracking, sensor fusion, voice control, and cloud-based health monitoring.',
     },
     {
-      subtitle: 'Results & Achievements',
+      subtitle: 'Results',
       period: '',
-      description: 'Successfully fabricated the prototype and validated self-transfer mechanism, indoor navigation in simulated hospital environment, and caregiver following capability. The system demonstrated safe operation and significant reduction in caregiver dependency.',
+      description: 'Successfully fabricated and tested the prototype. Validated safe self-transfer, indoor navigation, and caregiver following in simulated hospital environments.',
+      photos: [
+        { src: '/assets/images/assistive-robot-caregiver-tracking.png', alt: 'Caregiver following demonstration' }
+      ]
     }
   ]
-},
+}
 {
     id: 7,
     title: 'Automated ACB Re-Powering System',
